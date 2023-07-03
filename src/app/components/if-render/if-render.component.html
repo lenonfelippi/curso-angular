@@ -1,0 +1,8 @@
+<div class="container">
+  <h2>if e else</h2>
+  <div *ngIf="canShow">Foi permitido exibir</div>
+  <p *ngIf="name; else nameNotFound">O nome é {{name}}</p>
+  <ng-template #nameNotFound>
+    <p>Nome não foi encontrado</p>
+  </ng-template>
+</div>
